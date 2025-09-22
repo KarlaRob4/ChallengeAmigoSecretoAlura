@@ -1,5 +1,5 @@
-Aplicación en JavaScript para realizar el challenge Amigo Secreto
-Incluye:
+Aplicar JavaScript para realizar el challenge Amigo Secreto.
+Se realizó:
   * Un arreglo para guardar los nombres de los participantes.
   * Función para agregar amigos a la lista.
   * Función para mostrar la lista en pantalla.
