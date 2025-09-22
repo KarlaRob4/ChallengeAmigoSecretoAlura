@@ -1,5 +1,5 @@
 let amigo = [];
-let asignacion = [];
+let sorteoAmigo = [];
 
 function agregarAmigo (){
     let nombre = document.getElementById("amigo").value;
@@ -24,17 +24,16 @@ function sortearAmigo(){
     if (amigo.length < 2) {
         return alert("Debe haber al menos dos amigos para realizar el sorteo.");
     } else {
-        amigo.forEach(function(amigo) {
-            let amigoAsignado = obtenerAmigoAleatorio(amigo);
-            asignacion.push(amigoAsignado);
-            console.log (amigoAsignado);
-        });
+        let amigoSecreto = Math.floor(Math.random() * amigo.length);
+        sorteoAmigo.push(amigoSecreto);
+        mostrarAsignacion();
+
     }
 }
 
-function obtenerAmigoAleatorio() {
-    let amigoAsignado;  
-    let indiceA = Math.floor(Math.random() * amigo.length);
-    amigoAsignado = amigo[indiceA];
-    return amigoAsignado;
+function mostrarAsignacion(){
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML = "";
+    return resultado.textContent = 'Tu amig@ secreto es: ' + amigo[sorteoAmigo[sorteoAmigo.length - 1]];
+    
 }
