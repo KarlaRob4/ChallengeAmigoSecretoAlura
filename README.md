@@ -4,3 +4,6 @@ Se realizó:
   * Función para agregar amigos a la lista.
   * Función para mostrar la lista en pantalla.
   * Función para sortear los amigos de forma aleatoria.
+
+
+PASOS PARA JUGAR: 
